@@ -4,6 +4,9 @@ let launchDate = new Date("Nov 13, 2020 12:00:00").getTime();
 // set up timer to tick each second
 let timer = setInterval(tick, 1000);
 
+// grab countdown element
+const countdown = document.querySelector('.countdown');
+
 function tick () {
     //get current time
     let now = new Date().getTime();
@@ -34,6 +37,6 @@ function tick () {
         let time = `${days} : ${hours} : ${minutes} : ${seconds}`;
 
         //set time on document
-        document.querySelector('.countdown').innerText = time;
+        countdown.innerText = time;
     }
 }
