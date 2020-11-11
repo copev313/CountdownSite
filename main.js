@@ -1,5 +1,5 @@
 // Set up end date for countdown (getTime == Time in Milleseconds)
-let launchDate = new Date("Nov 28, 2020 12:00:00").getTime();
+let launchDate = new Date("Nov 30, 2020 12:00:00").getTime();
 
 // set up timer to tick each second
 let timer = setInterval(tick, 1000);
@@ -12,7 +12,7 @@ function tick () {
     let now = new Date().getTime();
 
     //get the difference in time
-    let t = launchDate - now;
+    let t = launchDate - now; 
 
     if (t > 0) {
 
